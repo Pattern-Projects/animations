@@ -1,21 +1,23 @@
 .box {
-    background-color: black;
+    position:relative;
+    border-radius: 150px;
+    background-color: red;
     width:150px;
-    height:0;
+    height:150px;
     margin:25px;
-    animation-name: growing;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-name: bouncing;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-@keyframes growing {
+@keyframes bouncing {
     from {
-        height: 0;
+        top: 0;
     }
     to{
-        height: 150px;
+        top: 100px;
     }
 }
